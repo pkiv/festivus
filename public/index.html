@@ -71,6 +71,7 @@
     <div id="login">
                 <h1>First things first, please login to fetch Artists!</h1>
                 <button id="login-button" class="btn btn-primary">Log in with Spotify</button>
+                <button id="other-button" class="btn btn-primary">I don't use Spotify</button>
               </div>
     <!-- Page Content -->
     <div class="container" id="loggedin">
@@ -91,11 +92,10 @@
         </div>
 
         <script id="bands" type="text/x-handlebars-template">
-        <ul>
         {{#each objects}}
         <div class="col-md-6 portfolio-item">
                 <a href="{{external_urls.spotify}}">
-                    <img class="img-responsive" src="{{images.0.url}}" alt="">
+                    <img class="img-responsive" src="{{images.0.url}}" alt=""  height="480" width="480">
                 </a>
                 <h3>
                     <a href="{{external_urls.spotify}}"> {{name}} </a>
@@ -103,6 +103,58 @@
             </div>
         {{/each}}
         </script>
+        <div id="noMatches">
+          <h3> No matches were found. That's ok! Check out a few great artists below. </h3>
+           <div class="col-md-6 portfolio-item">
+                <a href="https://open.spotify.com/artist/7CajNmpbOovFoOoasH2HaY">
+                    <img class="img-responsive" src="https://i.scdn.co/image/e9b57e3e5612713f137359c40c3843ecff853262" alt=""  height="480" width="480">
+                </a>
+                <h3>
+                    <a href="https://open.spotify.com/artist/7CajNmpbOovFoOoasH2HaY"> Calvin Harris </a>
+                </h3>
+            </div>
+            <div class="col-md-6 portfolio-item">
+                <a href="https://open.spotify.com/artist/3qm84nBOXUEQ2vnTfUTTFC">
+                    <img class="img-responsive" src="https://i.scdn.co/image/f55a4aca9ca68ac2f0e47d021c42555705a434ab" alt=""  height="480" width="480">
+                </a>
+                <h3>
+                    <a href="https://open.spotify.com/artist/3qm84nBOXUEQ2vnTfUTTFC"> Flume </a>
+                </h3>
+            </div>
+            <div class="col-md-6 portfolio-item">
+                <a href="https://open.spotify.com/artist/6nS5roXSAGhTGr34W6n7Et">
+                    <img class="img-responsive" src="https://i.scdn.co/image/7190450d3ad362cfb4fac1525f379711e3edda5f" alt=""  height="480" width="480">
+                </a>
+                <h3>
+                    <a href="https://open.spotify.com/artist/6nS5roXSAGhTGr34W6n7Et"> Disclosure </a>
+                </h3>
+            </div>
+            <div class="col-md-6 portfolio-item">
+                <a href="https://open.spotify.com/artist/4MXUO7sVCaFgFjoTI5ox5c">
+                    <img class="img-responsive" src="https://i.scdn.co/image/c9475278ed947f3b8241b5504ef8c7830897892b" alt=""  height="480" width="480">
+                </a>
+                <h3>
+                    <a href="https://open.spotify.com/artist/4MXUO7sVCaFgFjoTI5ox5c"> Sufjan Stevens </a>
+                </h3>
+            </div>
+            <div class="col-md-6 portfolio-item">
+                <a href="https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq">
+                    <img class="img-responsive" src="https://i.scdn.co/image/a706ba87cf368d76b3c9a7188d90cff1cac3aff5" alt=""  height="480" width="480">
+                </a>
+                <h3>
+                    <a href="https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"> Zedd </a>
+                </h3>
+            </div>
+            <div class="col-md-6 portfolio-item">
+                <a href="https://open.spotify.com/artist/1LeVJ5GPeYDOVUjxx1y7Rp">
+                    <img class="img-responsive" src="https://i.scdn.co/image/415870d4395fae4f66dd6be4a7b0b88e623cfd71" alt=""  height="480" width="480">
+                </a>
+                <h3>
+                    <a href="https://open.spotify.com/artist/1LeVJ5GPeYDOVUjxx1y7Rp"> Unknown Mortal Orchestra </a>
+                </h3>
+            </div>
+        </div>           
+
         <!-- /.row -->
         <hr>
 
@@ -117,6 +169,59 @@
         </footer>
 
     </div>
+
+    <div class="container" id="stock">
+          <h3> No Spotify? That's fine too! Check out a few great artists below. </h3>
+           <div class="col-md-6 portfolio-item">
+                <a href="https://open.spotify.com/artist/7CajNmpbOovFoOoasH2HaY">
+                    <img class="img-responsive" src="https://i.scdn.co/image/e9b57e3e5612713f137359c40c3843ecff853262" alt=""  height="480" width="480">
+                </a>
+                <h3>
+                    <a href="https://open.spotify.com/artist/7CajNmpbOovFoOoasH2HaY"> Calvin Harris </a>
+                </h3>
+            </div>
+            <div class="col-md-6 portfolio-item">
+                <a href="https://open.spotify.com/artist/3qm84nBOXUEQ2vnTfUTTFC">
+                    <img class="img-responsive" src="https://i.scdn.co/image/f55a4aca9ca68ac2f0e47d021c42555705a434ab" alt=""  height="480" width="480">
+                </a>
+                <h3>
+                    <a href="https://open.spotify.com/artist/3qm84nBOXUEQ2vnTfUTTFC"> Flume </a>
+                </h3>
+            </div>
+            <div class="col-md-6 portfolio-item">
+                <a href="https://open.spotify.com/artist/6nS5roXSAGhTGr34W6n7Et">
+                    <img class="img-responsive" src="https://i.scdn.co/image/7190450d3ad362cfb4fac1525f379711e3edda5f" alt=""  height="480" width="480">
+                </a>
+                <h3>
+                    <a href="https://open.spotify.com/artist/6nS5roXSAGhTGr34W6n7Et"> Disclosure </a>
+                </h3>
+            </div>
+            <div class="col-md-6 portfolio-item">
+                <a href="https://open.spotify.com/artist/4MXUO7sVCaFgFjoTI5ox5c">
+                    <img class="img-responsive" src="https://i.scdn.co/image/c9475278ed947f3b8241b5504ef8c7830897892b" alt=""  height="480" width="480">
+                </a>
+                <h3>
+                    <a href="https://open.spotify.com/artist/4MXUO7sVCaFgFjoTI5ox5c"> Sufjan Stevens </a>
+                </h3>
+            </div>
+            <div class="col-md-6 portfolio-item">
+                <a href="https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq">
+                    <img class="img-responsive" src="https://i.scdn.co/image/a706ba87cf368d76b3c9a7188d90cff1cac3aff5" alt=""  height="480" width="480">
+                </a>
+                <h3>
+                    <a href="https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"> Zedd </a>
+                </h3>
+            </div>
+            <div class="col-md-6 portfolio-item">
+                <a href="https://open.spotify.com/artist/1LeVJ5GPeYDOVUjxx1y7Rp">
+                    <img class="img-responsive" src="https://i.scdn.co/image/415870d4395fae4f66dd6be4a7b0b88e623cfd71" alt=""  height="480" width="480">
+                </a>
+                <h3>
+                    <a href="https://open.spotify.com/artist/1LeVJ5GPeYDOVUjxx1y7Rp"> Unknown Mortal Orchestra </a>
+                </h3>
+            </div>
+        </div>         
+
     <!-- /.container -->
 
     <!-- jQuery -->
@@ -167,7 +272,12 @@
                   if (response.artists.next != null){
                       subsequentCall(response.artists.next);
                   } else {
-                    $("#data").append(bandsTemplate({objects:matches})) ;
+                    if (matches.length = 0){
+                      $("#data").append(bandsTemplate({objects:matches})) ;
+                    } else {
+                      $('#noMatches').show();
+                    }
+                    $('#noMatches').hide();
                     $('#login').hide();
                     $('#loggedin').show();
                   }
@@ -190,7 +300,12 @@
                   if (response.artists.next != null){
                       subsequentCall(response.artists.next);
                   } else {
-                    $("#data").append(bandsTemplate({objects:matches})) ;
+                    if (matches.length > 0){
+                      $("#data").append(bandsTemplate({objects:matches})) ;
+                    } else {
+                      $('#noMatches').show();
+                    }
+                    $('#noMatches').hide();
                     $('#login').hide();
                     $('#loggedin').show();
                   }
@@ -215,6 +330,7 @@
         var bandsSource = $("#bands").html();
           bandsTemplate = Handlebars.compile (bandsSource),
           placeholder = $("#data").html();
+        $('#stock').hide();
         var params = getHashParams();
         var access_token = params.access_token,
             state = params.state,
@@ -230,13 +346,14 @@
           } else {
               $('#login').show();
               $('#loggedin').hide();
+              $('#stock').hide();
           }
           document.getElementById('login-button').addEventListener('click', function() {
             var client_id = 'INSERTKEYHERE'; // Your client id
             var redirect_uri = 'http://localhost:8888/'; // Your redirect uri
             var state = generateRandomString(16);
             localStorage.setItem(stateKey, state);
-            var scope = 'user-read-private user-follow-read';
+            var scope = 'user-follow-read';
             var url = 'https://accounts.spotify.com/authorize';
             url += '?response_type=token';
             url += '&client_id=' + encodeURIComponent(client_id);
@@ -244,6 +361,11 @@
             url += '&redirect_uri=' + encodeURIComponent(redirect_uri);
             url += '&state=' + encodeURIComponent(state);
             window.location = url;
+          }, false);
+          document.getElementById('other-button').addEventListener('click', function() {
+
+              $('#login').hide();
+              $('#stock').show();
           }, false);
         }
       })();
