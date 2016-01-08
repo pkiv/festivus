@@ -34,6 +34,9 @@
         white-space: nowrap;
         width: 500px;
       }
+      .hide {
+    display: none;
+    }
     </style>
 
 </head>
@@ -51,7 +54,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/">Festivus</a>
+                <a class="navbar-brand" href="./">Festivus</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -95,7 +98,7 @@
         {{#each objects}}
         <div class="col-md-6 portfolio-item">
                 <a href="{{external_urls.spotify}}">
-                    <img class="img-responsive" src="{{images.0.url}}" alt=""  height="480" width="480">
+                    <img class="img-responsive" src="{{images.0.url}}" alt=""  height="500" width="500">
                 </a>
                 <h3>
                     <a href="{{external_urls.spotify}}"> {{name}} </a>
@@ -103,11 +106,11 @@
             </div>
         {{/each}}
         </script>
-        <div id="noMatches">
+        <div id="noMatches" class="hide">
           <h3> No matches were found. That's ok! Check out a few great artists below. </h3>
            <div class="col-md-6 portfolio-item">
                 <a href="https://open.spotify.com/artist/7CajNmpbOovFoOoasH2HaY">
-                    <img class="img-responsive" src="https://i.scdn.co/image/e9b57e3e5612713f137359c40c3843ecff853262" alt=""  height="480" width="480">
+                    <img class="img-responsive" src="https://i.scdn.co/image/e9b57e3e5612713f137359c40c3843ecff853262" alt=""  height="500" width="360">
                 </a>
                 <h3>
                     <a href="https://open.spotify.com/artist/7CajNmpbOovFoOoasH2HaY"> Calvin Harris </a>
@@ -115,7 +118,7 @@
             </div>
             <div class="col-md-6 portfolio-item">
                 <a href="https://open.spotify.com/artist/3qm84nBOXUEQ2vnTfUTTFC">
-                    <img class="img-responsive" src="https://i.scdn.co/image/f55a4aca9ca68ac2f0e47d021c42555705a434ab" alt=""  height="480" width="480">
+                    <img class="img-responsive" src="https://i.scdn.co/image/f55a4aca9ca68ac2f0e47d021c42555705a434ab" alt=""  height="500" width="360">
                 </a>
                 <h3>
                     <a href="https://open.spotify.com/artist/3qm84nBOXUEQ2vnTfUTTFC"> Flume </a>
@@ -123,7 +126,7 @@
             </div>
             <div class="col-md-6 portfolio-item">
                 <a href="https://open.spotify.com/artist/6nS5roXSAGhTGr34W6n7Et">
-                    <img class="img-responsive" src="https://i.scdn.co/image/7190450d3ad362cfb4fac1525f379711e3edda5f" alt=""  height="480" width="480">
+                    <img class="img-responsive" src="https://i.scdn.co/image/7190450d3ad362cfb4fac1525f379711e3edda5f" alt=""  height="500" width="360">
                 </a>
                 <h3>
                     <a href="https://open.spotify.com/artist/6nS5roXSAGhTGr34W6n7Et"> Disclosure </a>
@@ -131,7 +134,7 @@
             </div>
             <div class="col-md-6 portfolio-item">
                 <a href="https://open.spotify.com/artist/4MXUO7sVCaFgFjoTI5ox5c">
-                    <img class="img-responsive" src="https://i.scdn.co/image/c9475278ed947f3b8241b5504ef8c7830897892b" alt=""  height="480" width="480">
+                    <img class="img-responsive" src="https://i.scdn.co/image/c9475278ed947f3b8241b5504ef8c7830897892b" alt=""  height="500" width="360">
                 </a>
                 <h3>
                     <a href="https://open.spotify.com/artist/4MXUO7sVCaFgFjoTI5ox5c"> Sufjan Stevens </a>
@@ -139,7 +142,7 @@
             </div>
             <div class="col-md-6 portfolio-item">
                 <a href="https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq">
-                    <img class="img-responsive" src="https://i.scdn.co/image/a706ba87cf368d76b3c9a7188d90cff1cac3aff5" alt=""  height="480" width="480">
+                    <img class="img-responsive" src="https://i.scdn.co/image/a706ba87cf368d76b3c9a7188d90cff1cac3aff5" alt=""  height="500" width="360">
                 </a>
                 <h3>
                     <a href="https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"> Zedd </a>
@@ -147,7 +150,7 @@
             </div>
             <div class="col-md-6 portfolio-item">
                 <a href="https://open.spotify.com/artist/1LeVJ5GPeYDOVUjxx1y7Rp">
-                    <img class="img-responsive" src="https://i.scdn.co/image/415870d4395fae4f66dd6be4a7b0b88e623cfd71" alt=""  height="480" width="480">
+                    <img class="img-responsive" src="https://i.scdn.co/image/415870d4395fae4f66dd6be4a7b0b88e623cfd71" alt=""  height="500" width="360">
                 </a>
                 <h3>
                     <a href="https://open.spotify.com/artist/1LeVJ5GPeYDOVUjxx1y7Rp"> Unknown Mortal Orchestra </a>
@@ -170,11 +173,11 @@
 
     </div>
 
-    <div class="container" id="stock">
+    <div class="container hide" id="stock">
           <h3> No Spotify? That's fine too! Check out a few great artists below. </h3>
            <div class="col-md-6 portfolio-item">
                 <a href="https://open.spotify.com/artist/7CajNmpbOovFoOoasH2HaY">
-                    <img class="img-responsive" src="https://i.scdn.co/image/e9b57e3e5612713f137359c40c3843ecff853262" alt=""  height="480" width="480">
+                    <img class="img-responsive" src="https://i.scdn.co/image/e9b57e3e5612713f137359c40c3843ecff853262" alt=""  height="500" width="360">
                 </a>
                 <h3>
                     <a href="https://open.spotify.com/artist/7CajNmpbOovFoOoasH2HaY"> Calvin Harris </a>
@@ -182,7 +185,7 @@
             </div>
             <div class="col-md-6 portfolio-item">
                 <a href="https://open.spotify.com/artist/3qm84nBOXUEQ2vnTfUTTFC">
-                    <img class="img-responsive" src="https://i.scdn.co/image/f55a4aca9ca68ac2f0e47d021c42555705a434ab" alt=""  height="480" width="480">
+                    <img class="img-responsive" src="https://i.scdn.co/image/f55a4aca9ca68ac2f0e47d021c42555705a434ab" alt=""  height="500" width="360">
                 </a>
                 <h3>
                     <a href="https://open.spotify.com/artist/3qm84nBOXUEQ2vnTfUTTFC"> Flume </a>
@@ -190,7 +193,7 @@
             </div>
             <div class="col-md-6 portfolio-item">
                 <a href="https://open.spotify.com/artist/6nS5roXSAGhTGr34W6n7Et">
-                    <img class="img-responsive" src="https://i.scdn.co/image/7190450d3ad362cfb4fac1525f379711e3edda5f" alt=""  height="480" width="480">
+                    <img class="img-responsive" src="https://i.scdn.co/image/7190450d3ad362cfb4fac1525f379711e3edda5f" alt=""  height="500" width="360">
                 </a>
                 <h3>
                     <a href="https://open.spotify.com/artist/6nS5roXSAGhTGr34W6n7Et"> Disclosure </a>
@@ -198,7 +201,7 @@
             </div>
             <div class="col-md-6 portfolio-item">
                 <a href="https://open.spotify.com/artist/4MXUO7sVCaFgFjoTI5ox5c">
-                    <img class="img-responsive" src="https://i.scdn.co/image/c9475278ed947f3b8241b5504ef8c7830897892b" alt=""  height="480" width="480">
+                    <img class="img-responsive" src="https://i.scdn.co/image/c9475278ed947f3b8241b5504ef8c7830897892b" alt=""  height="500" width="360">
                 </a>
                 <h3>
                     <a href="https://open.spotify.com/artist/4MXUO7sVCaFgFjoTI5ox5c"> Sufjan Stevens </a>
@@ -206,7 +209,7 @@
             </div>
             <div class="col-md-6 portfolio-item">
                 <a href="https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq">
-                    <img class="img-responsive" src="https://i.scdn.co/image/a706ba87cf368d76b3c9a7188d90cff1cac3aff5" alt=""  height="480" width="480">
+                    <img class="img-responsive" src="https://i.scdn.co/image/a706ba87cf368d76b3c9a7188d90cff1cac3aff5" alt=""  height="500" width="360">
                 </a>
                 <h3>
                     <a href="https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"> Zedd </a>
@@ -214,7 +217,7 @@
             </div>
             <div class="col-md-6 portfolio-item">
                 <a href="https://open.spotify.com/artist/1LeVJ5GPeYDOVUjxx1y7Rp">
-                    <img class="img-responsive" src="https://i.scdn.co/image/415870d4395fae4f66dd6be4a7b0b88e623cfd71" alt=""  height="480" width="480">
+                    <img class="img-responsive" src="https://i.scdn.co/image/415870d4395fae4f66dd6be4a7b0b88e623cfd71" alt=""  height="500" width="360">
                 </a>
                 <h3>
                     <a href="https://open.spotify.com/artist/1LeVJ5GPeYDOVUjxx1y7Rp"> Unknown Mortal Orchestra </a>
@@ -246,6 +249,10 @@
              }
              return false;
           }
+        $(function(){
+          $('#stock').hide().removeClass('hide');
+          $('#noMatches').hide().removeClass('hide');
+        });
         function getHashParams() {
           var hashParams = {};
           var e, r = /([^&;=]+)=?([^&;]*)/g,
@@ -265,7 +272,6 @@
                 success: function(response) {
                   for (var i = 0; i < response.artists.items.length; i++) {
                       if(lineUp.indexOf(response.artists.items[i].name) >= 0){
-
                           matches.push(response.artists.items[i]);
                       }
                   }
@@ -273,11 +279,11 @@
                       subsequentCall(response.artists.next);
                   } else {
                     if (matches.length = 0){
+                      $('#noMatches').hide();
                       $("#data").append(bandsTemplate({objects:matches})) ;
                     } else {
                       $('#noMatches').show();
                     }
-                    $('#noMatches').hide();
                     $('#login').hide();
                     $('#loggedin').show();
                   }
@@ -293,7 +299,11 @@
                 },
                 success: function(response) {
                   for (var i = 0; i < response.artists.items.length; i++) {
-                      if(lineUp.indexOf(response.artists.items[i].name) >= 0){
+                      if(lineUp.indexOf(response.artists.items[i].name) >= 0 || 
+                        lineUp.indexOf(response.artists.items[i].name.replace("&", "And")) >= 0 ||
+                        lineUp.indexOf(response.artists.items[i].name.replace("And", "&")) >= 0 ||
+                        lineUp.indexOf(response.artists.items[i].name.replace("and", "&")) >= 0
+                        ){
                           matches.push(response.artists.items[i]);
                       }
                   }
@@ -301,11 +311,11 @@
                       subsequentCall(response.artists.next);
                   } else {
                     if (matches.length > 0){
+                      $('#noMatches').hide();
                       $("#data").append(bandsTemplate({objects:matches})) ;
                     } else {
                       $('#noMatches').show();
                     }
-                    $('#noMatches').hide();
                     $('#login').hide();
                     $('#loggedin').show();
                   }
@@ -330,13 +340,12 @@
         var bandsSource = $("#bands").html();
           bandsTemplate = Handlebars.compile (bandsSource),
           placeholder = $("#data").html();
-        $('#stock').hide();
         var params = getHashParams();
         var access_token = params.access_token,
             state = params.state,
             storedState = localStorage.getItem(stateKey);
         var matches = [];
-        var lineUp = ["LCD Soundsystem", "Ellie Goulding", "Sufjan Stevens", "Jack Ü", "M83", "Underworld", "The Kills", "Foals", "Of Monsters And Men", "G-Eazy", "Purity Ring", "Rae Sremmurd", "Volbeat", "2manydjs", "Lord Huron", "St Germain", "Savages", "The Last Shadow Puppets", "Joey Bada$$", "DJ Mustard", "BØRNS", "Christine And The Queens", "Snakehips", "Robert DeLong", "Bob Moses", "Ibeyi", "Marco Carola", "Parov Stelar", "Black Coffee", "Years & Years", "Nicole Moudaber & Skin", "Lido", "HEALTH", "Mavis Staples", "Sasha", "Goldroom", "Carla Morrison", "Nic Fanciulli", "The Front Bottoms", "Skepta", "Sam Feldt", "Lemaitre", "Louis The Child", "Frances", "George FitzGerald", "DJ EZ", "Gallant", "HÆLOS", "Låpsley", "Miami Horror", "SG Lewis", "Sheer MaG", "Mbongwana Star", "Nina Las Vegas", "Nora En Pure", "Masha", "Guns N’ Roses", "Ice Cube", "Disclosure", "Zedd", "A$AP Rocky", "CHVRCHES", "Halsey", "James Bay", "Grimes", "Courtney Barnett", "Run The Jewels", "The Arcs", "RL Grime", "Gary Clark Jr.", "Silversun Pickups", "Lush", "ZHU", "Deerhunter", "Unknown Mortal Orchestra", "Rhye", "Bat For Lashes", "The Damned", "Vince Staples", "Tchami", "Nina Kraviz", "Snails", "RÜFÜS DU SOL", "Lost Frequencies", "Chronixx", "Vanic", "Justin Martin", "AlunaGeorge", "Mano Le Tough", "Shamir", "DJ Koze", "BADBADNOTGOOD", "Moon Taxi", "SZA", "Ex Hex", "Mr. Carmack", "SOPHIE", "Protjoe", "Alvvays", "Zella Day", "Dubfire", "Matthew Dear", "DMA’s", "Matoma", "Algiers", "GoGo Penguin", "The Black Madonna", "Cloves", "Strangers You Know", "Amine Edge & DANCE", "Phases", "The Dead Ships", "Calvin Harris", "Sia", "Major Lazer", "Flume", "Beach House", "The 1975", "Rancid", "Miike Snow", "Edward Sharpe And The Magnetic Zeros", "Matt And Kim", "Chris Stapleton", "Cold War Kids", "Death Grips", "The Chainsmokers", "Maceo Plex", "Baauer", "KSHMR", "Nathaniel Rateliff & The Night Sweats", "Adam Beyer & Ida Engberg", "Wolf Alice", "Pete Yorn", "Hudson Mohawke", "Kamasi Washington", "Claptone", "TOKiMONSTA", "Melody’s Echo Chamber", "Autolux", "John Digweed", "Thomas Jack", "Anderson .Paak", "Nosaj Thing", "Deafheaven", "Epik High", "Tensnake", "Alessia Cara", "Crystal Fighters", "The Vandals", "Joywave", "PRAYERS", "Young Fathers", "The Heavy", "Tei Shi", "Meg Meyers", "Soul Clap", "Cassy", "De Lux", "Girlpool", "Fur Coat", "AC Slater"];
+        var lineUp = ["LCD Soundsystem", "Ellie Goulding", "Sufjan Stevens", "Jack Ü", "M83", "Underworld", "The Kills", "Foals", "Of Monsters And Men", "G-Eazy", "Purity Ring", "Rae Sremmurd", "Volbeat", "2manydjs", "Lord Huron", "St Germain", "Savages", "The Last Shadow Puppets", "Joey Bada$$", "DJ Mustard", "BØRNS", "Christine And The Queens", "Snakehips", "Robert DeLong", "Bob Moses", "Ibeyi", "Marco Carola", "Parov Stelar", "Black Coffee", "Years & Years", "Nicole Moudaber & Skin", "Lido", "HEALTH", "Mavis Staples", "Sasha", "Goldroom", "Carla Morrison", "Nic Fanciulli", "The Front Bottoms", "Skepta", "Sam Feldt", "Lemaitre", "Louis The Child", "Frances", "George FitzGerald", "DJ EZ", "Gallant", "HÆLOS", "Låpsley", "Miami Horror", "SG Lewis", "Sheer MaG", "Mbongwana Star", "Nina Las Vegas", "Nora En Pure", "Masha", "Guns N’ Roses", "Ice Cube", "Disclosure", "Zedd", "A$AP Rocky", "CHVRCHES", "Halsey", "James Bay", "Grimes", "Courtney Barnett", "Run The Jewels", "The Arcs", "RL Grime", "Gary Clark Jr.", "Silversun Pickups", "Lush", "ZHU", "Deerhunter", "Unknown Mortal Orchestra", "Rhye", "Bat For Lashes", "The Damned", "Vince Staples", "Tchami", "Nina Kraviz", "Snails", "RÜFÜS DU SOL", "Lost Frequencies", "Chronixx", "Vanic", "Justin Martin", "AlunaGeorge", "Mano Le Tough", "Shamir", "DJ Koze", "BADBADNOTGOOD", "Moon Taxi", "SZA", "Ex Hex", "Mr. Carmack", "SOPHIE", "Protjoe", "Alvvays", "Zella Day", "Dubfire", "Matthew Dear", "DMA’s", "Matoma", "Algiers", "GoGo Penguin", "The Black Madonna", "Cloves", "Strangers You Know", "Amine Edge & DANCE", "Phases", "The Dead Ships", "Calvin Harris", "Sia", "Major Lazer", "Flume", "Beach House", "The 1975", "Rancid", "Miike Snow", "Edward Sharpe And The Magnetic Zeros", "Matt And Kim", "Chris Stapleton", "Cold War Kids", "Death Grips", "The Chainsmokers", "Maceo Plex", "Baauer", "KSHMR", "Nathaniel Rateliff & The Night Sweats", "Adam Beyer & Ida Engberg", "Wolf Alice", "Pete Yorn", "Hudson Mohawke", "Kamasi Washington", "Claptone", "TOKiMONSTA", "Melody’s Echo Chamber", "Autolux", "John Digweed", "Thomas Jack", "Anderson Paak", "Nosaj Thing", "Deafheaven", "Epik High", "Tensnake", "Alessia Cara", "Crystal Fighters", "The Vandals", "Joywave", "PRAYERS", "Young Fathers", "The Heavy", "Tei Shi", "Meg Meyers", "Soul Clap", "Cassy", "De Lux", "Girlpool", "Fur Coat", "AC Slater"];
         if (access_token && (state == null || state !== storedState)) {
           alert('There was an error during the authentication');
         } else {
@@ -349,8 +358,8 @@
               $('#stock').hide();
           }
           document.getElementById('login-button').addEventListener('click', function() {
-            var client_id = 'INSERTKEYHERE'; // Your client id
-            var redirect_uri = 'http://localhost:8888/'; // Your redirect uri
+            var client_id = '9175e2cd86fc471a8ca76ebe04809fdc'; // Your client id
+            var redirect_uri = 'http://paulklein.works/festivus/'; // Your redirect uri
             var state = generateRandomString(16);
             localStorage.setItem(stateKey, state);
             var scope = 'user-follow-read';
