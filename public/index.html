@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -72,12 +73,12 @@
         <!-- /.container -->
     </nav>
     <div id="login">
-                <h1>First things first, please login to fetch Artists!</h1>
+                <h1>Festivus scans through the artists you follow on Spotify, and matches them with the 2016 Coachella lineup.</h1>
                 <button id="login-button" class="btn btn-primary">Log in with Spotify</button>
                 <button id="other-button" class="btn btn-primary">I don't use Spotify</button>
               </div>
     <!-- Page Content -->
-    <div class="container" id="loggedin">
+    <div class="container hide" id="loggedin">
 
         <!-- Page Header -->
         <div class="row">
@@ -252,6 +253,7 @@
         $(function(){
           $('#stock').hide().removeClass('hide');
           $('#noMatches').hide().removeClass('hide');
+    $('#loggedin').hide().removeClass('hide');
         });
         function getHashParams() {
           var hashParams = {};
@@ -359,7 +361,7 @@
           }
           document.getElementById('login-button').addEventListener('click', function() {
             var client_id = '9175e2cd86fc471a8ca76ebe04809fdc'; // Your client id
-            var redirect_uri = 'http://paulklein.works/festivus/'; // Your redirect uri
+            var redirect_uri = 'http://localhost:8888'; // Your redirect uri
             var state = generateRandomString(16);
             localStorage.setItem(stateKey, state);
             var scope = 'user-follow-read';
