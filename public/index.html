@@ -272,15 +272,19 @@
                   'Authorization': 'Bearer ' + access_token
                 },
                 success: function(response) {
-                  for (var i = 0; i < response.artists.items.length; i++) {
-                      if(lineUp.indexOf(response.artists.items[i].name) >= 0){
+    for (var i = 0; i < response.artists.items.length; i++) {
+                      if(lineUp.indexOf(response.artists.items[i].name) >= 0 ||
+                        lineUp.indexOf(response.artists.items[i].name.replace("&", "And")) >= 0 ||
+                        lineUp.indexOf(response.artists.items[i].name.replace("And", "&")) >= 0 ||
+                        lineUp.indexOf(response.artists.items[i].name.replace("and", "&")) >= 0
+                        ){
                           matches.push(response.artists.items[i]);
                       }
                   }
                   if (response.artists.next != null){
                       subsequentCall(response.artists.next);
                   } else {
-                    if (matches.length = 0){
+                    if (matches.length > 0){
                       $('#noMatches').hide();
                       $("#data").append(bandsTemplate({objects:matches})) ;
                     } else {
@@ -289,7 +293,7 @@
                     $('#login').hide();
                     $('#loggedin').show();
                   }
-                }
+    }
             });
         }
 
